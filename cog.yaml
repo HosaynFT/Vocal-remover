@@ -1,0 +1,10 @@
+build:
+  gpu: true
+  cuda: "11.8"
+  python_version: "3.10"
+  python_packages:
+    - "audio-separator[gpu]==0.28.2"
+    - "torch"
+    - "torchaudio"
+
+predict: "predict.py:Predictor"
